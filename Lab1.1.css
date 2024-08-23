@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #151516;
+}
+
+/* Navigation Bar */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: rgb(15, 1, 1);
+}
+
+.hero-section h1 {
+    color: #110202;
+    font-size: 48px;
+}
+
+.hero-section p {
+    font-size: 20px;
+}
+
+/* Products Section */
+.products-section .card {
+    transition: transform 0.2s;
+    margin-bottom: 30px;
+}
+
+.products-section .card:hover {
+    transform: scale(1.05);
+}
+
+.products-section .card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.products-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Contact Form Section */
+.contact-section {
+    background-color: #f4ebeb;
+    padding: 40px 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.contact-section form {
+    border: 1px solid #282222;
+    padding: 20px;
+    background-color: #d3e77a;
+    border-radius: 5px;
+}
+
+.contact-section .form-control {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: rgb(242, 239, 239);
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    color: blue; 
+}
+
+
+#special-offer {
+    color: red;
+    font-weight: bold;
+}
+
+
+.discount {
+    color: green;
+    font-size: 20px;
+}
+
+.bg-img {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+button {
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+.order-section form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+}

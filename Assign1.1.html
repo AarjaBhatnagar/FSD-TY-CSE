@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Details - MITWPU Student Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="MITWPU Logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="additional-details-form">
+            <h2>Additional Details Form</h2>
+            <form id="additional-details-form">
+                <input type="text" id="father-name" placeholder="Father's Name" required>
+                <input type="text" id="father-occupation" placeholder="Father's Occupation" required>
+                <input type="number" id="father-phone" placeholder="Father's Phone Number" required>
+                <input type="text" id="mother-name" placeholder="Mother's Name" required>
+                <input type="text" id="mother-occupation" placeholder="Mother's Occupation" required>
+                <input type="number" id="mother-phone" placeholder="Mother's Phone Number" required>
+                <input type="number" id="marks-12th" placeholder="Marks in 12th" required>
+                <input type="number" id="marks-10th" placeholder="Marks in 10th" required>
+                <input type="number" id="marks-cet" placeholder="Marks in CET" required>
+                <input type="number" id="aadhar" placeholder="Student Aadhar Number" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

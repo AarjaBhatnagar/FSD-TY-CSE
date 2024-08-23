@@ -1,0 +1,63 @@
+/* External CSS for Stationary Shop */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Products Section */
+.products-section .card {
+    transition: transform 0.2s;
+}
+.products-section .card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Inline CSS Example */
+h1 {
+    color: rgb(0, 0, 11); /* Example of inline CSS */
+}
+
+/* Internal CSS Example (Add this within <style> tags in HTML file) */
+/* .example-internal {
+    font-size: 18px;
+    margin-bottom: 10px;
+} */
+
+/* ID Selector */
+#special-offer {
+    color: red;
+    font-weight: bold;
+}
+
+/* Class Selector */
+.discount {
+    color: green;
+    font-size: 20px;
+}
+
+/* Exploring Background Image */
+.bg-img {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}

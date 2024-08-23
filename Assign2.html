@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Feedback</title>
+    <link rel="stylesheet" href="assign.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Feedback</h1>
+        <div id="teacher-feedback">
+            <h2>Teacher Feedback Form</h2>
+            <form id="teacherFeedbackForm" onsubmit= "event.preventDefault(); submitTeacherFeedback();">
+                <label for="teacherName">Teacher Name:</label>
+                <input type="text" id="teacherName" name="teacherName" required>
+
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentNameT" name="studentNameT" required>
+
+                <label for="panel">Panel:</label>
+                <select id="panel" name="panel" required>
+                    <option value="A">Panel A</option>
+                    <option value="B">Panel B</option>
+                    <option value="C">Panel C</option>
+                    <option value="D">Panel D</option>
+                    <option value="E">Panel E</option>
+                    <option value="F">Panel F</option>
+                    <option value="G">Panel G</option>
+                    <option value="H">Panel H</option>
+                    <option value="I">Panel I</option>
+                </select>
+
+                <label for="courseT">Course:</label>
+                <select type="text" id="courseT" name="courseT" required>
+                    <option value="A">FSD Full Stack Development</option>
+                </select>
+
+                <label for="studentFeedback">Student Feedback:</label>
+                <textarea id="studentFeedback" name="studentFeedback" rows="4" required></textarea>
+
+                <fieldset>
+
+                    <Legend>Student Behaviour:</Legend>
+                    <label><input type="radio" name="sb" value="Excellent" required>Excellent</label>
+                    <label><input type="radio" name="sb" value="Good" required>Good</label>
+                    <label><input type="radio" name="sb" value="Needs improvement" required>Need to work</label>
+                
+                <fieldset>
+                    <legend>Overall Rating:</legend>
+                    <label><input type="radio" name="rating" value="1" required> 1</label>
+                    <label><input type="radio" name="rating" value="2" required> 2</label>
+                    <label><input type="radio" name="rating" value="3" required> 3</label>
+                    <label><input type="radio" name="rating" value="4" required> 4</label>
+                    <label><input type="radio" name="rating" value="5" required> 5</label>
+                </fieldset>
+
+                <!--<button type="button" onclick="submitTeacherFeedback()">Submit</button>-->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="assign.js"></script>
+</body>
+</html>

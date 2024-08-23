@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Ticket Booking</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("C:\Users\Aarja\Pictures\Screenshots\Screenshot 2024-07-12 093354.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgba(164, 222, 70, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: rgba(228, 170, 170, 0.8);
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #0c0c0c;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      background-color: rgba(216, 62, 62, 0.8);
+      color: #faeeee;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .booking-form {
+      background-color: rgba(54, 144, 234, 0.8);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(193, 28, 28, 0.1);
+    }
+
+    .booking-form input,
+    .booking-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #171616;
+      border-radius: 3px;
+    }
+
+    .booking-form button {
+      background-color: rgba(194, 240, 40, 0.8);
+      color: #4b0404;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .booking-form button:hover {
+      background-color: rgba(213, 86, 86, 0.8);
+    }
+
+    footer {
+      background-color: rgba(51, 51, 51, 0.8);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Air Ticket Booking</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Flights</a>
+    <a href="#">Deals</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <div class="booking-form">
+      <h2>Book Your Flight</h2>
+      <form>
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" required>
+
+        <label for="passengers">Passengers:</label>
+        <select id="passengers" name="passengers" required>
+          <option value="">Select number of passengers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <button type="submit">Search Flights</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Air Ticket Booking. All rights reserved. Kindly contact for further enquiry.</p>
+  </footer>
+</body>
+</html>
